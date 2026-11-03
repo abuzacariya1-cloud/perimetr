@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /.claude/
+
+Sitemap: https://abuzacariya1-cloud.github.io/perimetr/sitemap.xml

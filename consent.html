@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Согласие на обработку персональных данных — {brand}</title>
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#161616">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="config.js" defer></script>
+  <script src="js/icons.js" defer></script>
+  <script src="js/legal.js" defer></script>
+</head>
+<body>
+  <!--
+    ШАБЛОН ДОКУМЕНТА. Название компании, реквизиты, адрес и почта подставляются из config.js.
+    С 1 сентября 2025 года согласие должно оформляться отдельно от других документов —
+    поэтому оно вынесено на отдельную страницу. Перед запуском покажите текст юристу.
+  -->
+  <header class="legal-header">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="На главную">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor">
+            <rect x=".75" y=".75" width="38.5" height="38.5" rx="10" stroke-opacity=".38" stroke-width="1.5"/>
+            <path d="M11.5 30V11.5h17V30" stroke-width="2"/>
+            <path d="M16.5 16v14M20 16v14M23.5 16v14" stroke-width="1" stroke-opacity=".75"/>
+          </svg>
+        </span>
+        <span class="logo__text"><span class="logo__name" data-text="brand.name">ПЕРИМЕТР</span></span>
+      </a>
+      <a class="legal-back" href="index.html"><span data-icon="arrow-left"></span>На главную</a>
+    </div>
+  </header>
+
+  <main class="legal">
+    <div class="container">
+      <article class="legal__body">
+        <p class="eyebrow">Документ</p>
+        <h1 class="legal__title">Согласие на обработку персональных данных</h1>
+        <p class="legal__date">Редакция от <span data-text="legal.updated"></span></p>
+
+        <p>Отправляя заявку на сайте <a data-site-link></a> и отмечая галочку «Я даю согласие на обработку персональных данных», я свободно, своей волей и в своём интересе даю согласие оператору — <span data-text="company.legalName"></span> (ИНН <span data-text="company.inn"></span>, ОГРН <span data-text="company.ogrn"></span>, адрес: <span data-text="company.legalAddress"></span>) — на обработку моих персональных данных на следующих условиях.</p>
+
+        <h2>1. Какие данные</h2>
+        <ul>
+          <li>имя;</li>
+          <li>номер телефона;</li>
+          <li>адрес участка, параметры забора или ворот и другие сведения, которые я указал в заявке;</li>
+          <li>технические данные: IP-адрес, сведения о браузере, файлы cookie, адрес страницы и рекламные метки.</li>
+        </ul>
+
+        <h2>2. Для чего</h2>
+        <ul>
+          <li>связаться со мной по заявке, проконсультировать и согласовать замер;</li>
+          <li>рассчитать стоимость, подготовить смету и договор;</li>
+          <li>выполнить работы и гарантийные обязательства.</li>
+        </ul>
+
+        <h2>3. Какие действия с данными разрешены</h2>
+        <p>Сбор, запись, систематизация, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передача (предоставление, доступ) лицам, которые помогают оператору обработать заявку, в том числе сервису отправки заявок <span data-text="legal.formService"></span>, блокирование, удаление и уничтожение — с использованием средств автоматизации и без них.</p>
+        <p>Я согласен на трансграничную передачу данных, если серверы указанного сервиса находятся за пределами Российской Федерации.</p>
+
+        <h2>4. Срок действия и отзыв согласия</h2>
+        <p>Согласие действует до достижения целей обработки или до его отзыва. Я могу отозвать согласие в любой момент, направив письмо на <a data-email-link data-text="company.email"></a>. После отзыва оператор прекратит обработку и удалит данные в срок, установленный законом, если нет других законных оснований для их обработки.</p>
+
+        <h2>5. Подтверждение</h2>
+        <p>Я подтверждаю, что ознакомлен с <a data-privacy-link>Политикой обработки персональных данных</a> и что указанные мной данные принадлежат мне или я вправе их передать.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="legal-footer">
+    <div class="container">© <span data-year></span> <span data-text="company.legalName"></span> · <a data-privacy-link>Политика конфиденциальности</a></div>
+  </footer>
+</body>
+</html>

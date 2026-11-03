@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <script>
+    /* На GitHub Pages эта страница может открыться по любому адресу внутри сайта —
+       указываем браузеру, где лежат стили и картинки */
+    (function () {
+      var folder = location.pathname.split('/')[1];
+      if (/\.github\.io$/.test(location.hostname) && folder) document.write('<base href="/' + folder + '/">');
+    })();
+  </script>
+  <title>Страница не найдена — {brand}</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#161616">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="config.js" defer></script>
+  <script src="js/icons.js" defer></script>
+  <script src="js/legal.js" defer></script>
+</head>
+<body>
+  <main class="not-found">
+    <div class="container not-found__inner">
+      <a class="logo" href="index.html" aria-label="На главную">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor">
+            <rect x=".75" y=".75" width="38.5" height="38.5" rx="10" stroke-opacity=".38" stroke-width="1.5"/>
+            <path d="M11.5 30V11.5h17V30" stroke-width="2"/>
+            <path d="M16.5 16v14M20 16v14M23.5 16v14" stroke-width="1" stroke-opacity=".75"/>
+          </svg>
+        </span>
+        <span class="logo__text"><span class="logo__name" data-text="brand.name">ПЕРИМЕТР</span></span>
+      </a>
+      <p class="not-found__code">404</p>
+      <h1 class="not-found__title">Такой страницы нет</h1>
+      <p class="not-found__text">Возможно, ссылка устарела или в адресе опечатка. Вернитесь на главную или позвоните нам — поможем.</p>
+      <div class="not-found__actions">
+        <a class="btn btn--primary" href="index.html">На главную <span data-icon="arrow-right"></span></a>
+        <a class="btn btn--ghost" data-phone-link data-text="company.phone">Позвонить</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
